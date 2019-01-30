@@ -13,6 +13,23 @@ for (let key in data) {
 }
 
 
+
+// Complete the code below:
+const foo = {
+    color : 'red',
+    getColor : function () {
+        //make this function return foo.color
+        //without using the word: "foo"
+        return `${this.color}`;
+    }
+}
+console.log(foo.color);
+
+
+
+
+
+
 //Prototype
 // Addition
 const myPolyfill = function () {}
