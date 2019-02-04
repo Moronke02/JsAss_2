@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Learning to use axios to fetch data</title>
+    </head>
+    <body>
+        <h1 id="content"><div class="Loading"></div></h1>
+        <button id="fetch-info">Fetch Information</button>
+        <script src="https://unpkg.com/axios/dist.min.js"></script>
+        <script type="application/javascript">
+        (function(){
+            document.getElementById("fetch-info")
+            .addEventListener("click", function (){
+                axios.get('https://swapi.co')
+                .then(function (result){
+                    var name = result.data.name
+                    document.getElementById("content").innerHTML = name
+                })
+                .catch(function(error){
+                    console.error(error)
+                })
+            })
+        })()
+        </script>
+         
+    </body>
+</html>
