@@ -1,0 +1,35 @@
+<html>
+    <head></head>
+    <body>
+         <div>
+             <h1 id="heading">Hello World!</h1>
+             <p><a id="myAnchor" href="http.button.com/assignment/js/">Javascript Assignment</a></p>
+             <p><a id="myAnchor" href="http.button1.com/assignment/js/">Javascript Assignment1</a></p>
+             <p><a id="myAnchor" href="http.button2.com/assignment/js/">Javascript Assignment2</a></p>
+             <p><a id="myAnchor" href="http.button3.com/assignment/js/">Javascript Assignment3</a></p>
+             <p><a id="myAnchor" href="http.button4.com/assignment/js/">Javascript Assignment4</a></p>
+             <p><a id="myAnchor" href="http.button5.com/assignment/js/">Javascript Assignment5</a></p>
+             <p><a id="myAnchor" href="http.button6.com/assignment/js/">Javascript Assignment6</a></p>
+             <p><a id="myAnchor" href="http.button7.com/assignment/js/">Javascript Assignment7</a></p>
+             <p><a id="myAnchor" href="http.button8.com/assignment/js/">Javascript Assignment8</a></p>
+             <p><a id="myAnchor" href="http.button9.com/assignment/js/">Javascript Assignment9</a></p>
+             
+         </div>
+
+        <script type="application/javascript">
+            (function () {
+                var x = document.getElementsByTagName("div") [1]
+                for(var i = 1; i <= 10; i++){
+                    var button = document.createElement('button')
+                    button.innerHTML = "Click Me "+i
+                    document.body.appendChild(button)
+                }
+            })();
+
+            (function (){
+                var x = document.getElementsById("myAnchor")
+               .href;
+            })
+        </script>
+    </body>
+</html>
