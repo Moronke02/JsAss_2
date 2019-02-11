@@ -46,7 +46,7 @@ const texasss = [
 
    // Part 3 - List all female coders
    const femaleCodersTexasss = texasss.filter(function(user){
-       return user.gender === 'f';
+       return user.gender === 'f' && user.coder === true;
    });
    console.log(femaleCodersTexasss);
 
@@ -112,7 +112,7 @@ const texasss = [
 
   // Part 3 -  List all female coders
   const femaleCodersNewieyork = newieyork.filter(function(user){
-    return user.gender === 'f';
+    return user.gender === 'f' && user.coder === true;
   });
   console.log(femaleCodersNewieyork);
   
@@ -152,7 +152,7 @@ const texasss = [
   
   // Part 1 - Find the total age of male coders under 25
   const maleCoders = vegzas.filter(function(user){
-    return user.age < 25 && user.gender === 'm';
+    return user.age < 25 &&  user.coder === true && user.gender === 'm';
   })
   .reduce(function(a,b){
      return a + b.age;
@@ -161,7 +161,7 @@ const texasss = [
 
   // Part 2 - List all male coders over 30
   const olderMaleCoders = vegzas.filter(function(user){
-    return user.age > 30 && user.gender === 'm';
+    return user.age > 30 && user.coder === true && user.gender === 'm';
   })
   console.log(olderMaleCoders);
 
